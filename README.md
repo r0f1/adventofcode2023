@@ -2,7 +2,7 @@
 
 |Exercise Description|Solution|
 |:---|:---|
-|[Day 1: xxxxx](https://adventofcode.com/2023/day/1) |[py](/day01/main.py)|
+|[Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1) |[py](/day01/main.py)|
 
 My solutions from previous years:
 * [r0f1/adventofcode2020](https://github.com/r0f1/adventofcode2020)
