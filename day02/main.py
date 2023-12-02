@@ -1,27 +1,22 @@
 from collections import defaultdict
 import math
+import re
 
 with open("input.txt") as f:
-    lines = [x.strip() for x in f]
+    lines = [x.split(":")[1] for x in f]
+
+part1 = 0
+part2 = 0
 
 allowed = {"red": 12, "green": 13, "blue": 14}
+for idx, content in enumerate(lines, start=1):
+    d = defaultdict(int)
+    for n, c in re.findall("(\d+) (\w+)", content):
+        d[c] = max(d[c], int(n))
 
-games_list = []
-for line in lines:
-    game, content = line.split(":")
-    game_id = int(game[5:])
-    rounds = content.split(";")
-    game_dict = defaultdict(int)
-    rounds_list = []
-    for round in rounds:
-        drawings = round.split(",")
-        drawings_list = []
-        for drawing in drawings:
-            n, color = drawing.strip().split(" ")
-            game_dict[color] = max(game_dict[color], int(n))
-            drawings_list.append(int(n) <= allowed[color])
-        rounds_list.append(all(drawings_list))
-    games_list.append((game_id, all(rounds_list), math.prod(game_dict.values())))
+    if all(d[c] <= n for c, n in allowed.items()):
+        part1 += idx
+    part2 += math.prod(d.values())
 
-print(sum(i for i, r, _ in games_list if r))
-print(sum(g for _, _, g in games_list))
+print(part1)
+print(part2)
