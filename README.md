@@ -10,6 +10,7 @@
 |[Day 6: Wait For It](https://adventofcode.com/2023/day/6)                     |[py](/day06/main.py)|
 |[Day 7: Camel Cards](https://adventofcode.com/2023/day/7)                     |[py](/day07/main.py)|
 |[Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8)               |[py](/day08/main.py)|
+|[Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9)              |[py](/day09/main.py), [alt](/day09/alt.py)|
 
 
 My solutions from previous years:
