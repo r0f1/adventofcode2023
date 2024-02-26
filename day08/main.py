@@ -8,16 +8,7 @@ for line in lines[2:]:
     s, ts = line.split(" = ")
     d[s] = {"L": ts[1:4], "R": ts[6:9]}
 
-def calc1():
-    counter = 0
-    curr = "AAA"
-    while curr != "ZZZ":
-        for k in lines[0]:
-            curr = d[curr][k]
-        counter += len(lines[0])
-    return counter
-
-def calc2(curr):
+def calc(curr):
     counter = 0
     while not curr.endswith("Z"):
         for k in lines[0]:
@@ -25,6 +16,7 @@ def calc2(curr):
         counter += len(lines[0])
     return counter
 
-print(calc1())
-paths = [calc2(c) for c in d.keys() if c.endswith("A")]
+nodes = sorted(n for n in d.keys() if n.endswith("A"))
+paths = [calc(c) for c in nodes]
+print(paths[0])
 print(lcm(*paths))
