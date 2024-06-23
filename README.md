@@ -12,6 +12,7 @@
 |[Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8)               |[py](/day08/main.py)|
 |[Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9)              |[py](/day09/main.py), [alt](/day09/alt.py)|
 |[Day 10: Pipe Maze](https://adventofcode.com/2023/day/10)                     |[py](/day10/main.py)|
+|[Day 11: Cosmic Expansion](https://adventofcode.com/2023/day/11)              |[py](/day11/main.py)|
 
 My solutions from previous years:
 * [r0f1/adventofcode2020](https://github.com/r0f1/adventofcode2020)
