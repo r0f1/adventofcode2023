@@ -1,6 +1,6 @@
 # :sparkles: Advent of Code 2023 :sparkles:
 
-|Exercise Description|Solution|
+| Exercise Description | Solution |
 |:---|:---|
 |[Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1)                     |[py](/day01/main.py), [alt](/day01/alt.py)|
 |[Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2)                  |[py](/day02/main.py)|
